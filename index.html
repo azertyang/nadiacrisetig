@@ -1,151 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mon Portfolio</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-      background: #fafafa;
-      color: #1a1a1a;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 80px 20px;
-    }
-
-    header {
-      margin-bottom: 60px;
-    }
-
-    h1 {
-      font-size: 42px;
-      font-weight: 600;
-      margin: 0;
-      letter-spacing: -1px;
-    }
-
-    .subtitle {
-      color: #666;
-      margin-top: 10px;
-      font-size: 18px;
-    }
-
-    section {
-      margin-bottom: 50px;
-    }
-
-    h2 {
-      font-size: 20px;
-      font-weight: 600;
-      margin-bottom: 12px;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 6px;
-    }
-
-    p {
-      margin: 6px 0;
-      color: #333;
-    }
-
-    .card {
-      background: white;
-      border: 1px solid #eee;
-      border-radius: 14px;
-      padding: 16px 18px;
-      margin-bottom: 12px;
-    }
-
-    .tag {
-      display: inline-block;
-      font-size: 12px;
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: #f2f2f2;
-      margin-right: 6px;
-      margin-top: 6px;
-      color: #444;
-    }
-
-    a {
-      color: #111;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
-    footer {
-      margin-top: 80px;
-      font-size: 14px;
-      color: #888;
-      text-align: center;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nadia Crisetig</title>
+  <link rel="stylesheet" href="./homepage_style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="glow glow-1" aria-hidden="true"></div>
+  <div class="glow glow-2" aria-hidden="true"></div>
+
   <div class="container">
 
+    <!-- ===== HEADER ===== -->
     <header>
-      <h1>Ton Nom</h1>
-      <div class="subtitle">Étudiante / Bioinfo / Sport / Ce que tu veux ✨</div>
+      <h1>Nadia Crisetig</h1>
+      <div class="subtitle">
+        <span class="dot"></span>
+        Étudiante
+      </div>
     </header>
 
+    <!-- ===== ABOUT ===== -->
     <section>
-      <h2>À propos</h2>
-      <p>
-        Courte bio ici. Par exemple : étudiante passionnée par la bioinformatique,
-        le sport et les projets data / recherche.
+      <div class="section-label">À propos</div>
+      <p class="about-text">
+        <!-- FILL IN: Short bio about Nadia, 2–3 sentences. -->
+        Bonjour, je suis Nadia — étudiante passionnée par [ton domaine]. J'aime [ce que tu fais / tes centres d'intérêt]. Bienvenue sur mon portfolio.
       </p>
     </section>
 
+    <!-- ===== EDUCATION ===== -->
     <section>
-      <h2>Projets</h2>
-
-      <div class="card">
-        <strong>Projet 1</strong>
-        <p>Courte description du projet.</p>
-        <span class="tag">Python</span>
-        <span class="tag">Bioinfo</span>
+      <div class="section-label">Formation</div>
+      <div class="edu-card">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-info">
+          <!-- FILL IN: School name, degree, years -->
+          <strong>[Nom de l'école / université]</strong>
+          <span>[Filière / diplôme]</span>
+          <span class="edu-years">[Année début] – [Année fin]</span>
+        </div>
       </div>
-
-      <div class="card">
-        <strong>Projet 2</strong>
-        <p>Autre projet intéressant avec description simple.</p>
-        <span class="tag">R</span>
-        <span class="tag">Data</span>
-      </div>
-
+      <!-- Duplicate the edu-card block above to add more entries -->
     </section>
 
+    <!-- ===== SKILLS ===== -->
     <section>
-      <h2>Expérience</h2>
-
-      <div class="card">
-        <strong>Stage / Job / Lab</strong>
-        <p>Ce que tu as fait + compétences acquises.</p>
+      <div class="section-label">Compétences</div>
+      <div class="skills-grid">
+        <!-- FILL IN: Replace or add skill cards as needed -->
+        <div class="skill-card">
+          <span class="skill-icon">🎨</span>
+          <span class="skill-name">[Compétence 1]</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">✏️</span>
+          <span class="skill-name">[Compétence 2]</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">💻</span>
+          <span class="skill-name">[Compétence 3]</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">📐</span>
+          <span class="skill-name">[Compétence 4]</span>
+        </div>
       </div>
-
     </section>
 
+    <!-- ===== PROJECTS ===== -->
     <section>
-      <h2>Contact</h2>
-      <p>Email : tonemail@example.com</p>
-      <p>
-        GitHub :
-        <a href="https://github.com/">tonprofil</a>
-      </p>
+      <div class="section-label">Projets</div>
+      <div id="projects-list">
+
+        <!-- PROJECT CARD — duplicate this block for each project in your folder -->
+        <div class="card">
+          <a href="./projects/donkey-skin/index.html"><strong>Donkey Skin</strong></a>
+          <p>Illustration <!-- FILL IN: short description --></p>
+          <span class="arrow">→</span>
+        </div>
+
+        <!-- FILL IN: Add one card per project folder, e.g.:
+        <div class="card">
+          <a href="./projects/your-project/index.html"><strong>Nom du projet</strong></a>
+          <p>Courte description du projet</p>
+          <span class="arrow">→</span>
+        </div>
+        -->
+
+      </div>
+
+      <!-- CV download button -->
+      <a class="cv-btn" href="./cv.pdf" download>
+        <span>📄</span> Télécharger mon CV
+      </a>
+      <!-- FILL IN: Put your CV file at the root of the project and name it cv.pdf -->
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+      <div class="section-label">Contact</div>
+      <div class="contact-card">
+        <p class="contact-intro">Une question, une collaboration, ou juste envie de dire bonjour ?</p>
+        <form class="contact-form" onsubmit="handleContact(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nom</label>
+              <input type="text" id="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="votre@email.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Votre message..." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Envoyer →</button>
+          <p class="form-note" id="form-feedback"></p>
+        </form>
+        <div class="contact-direct">
+          <span>Ou directement :</span>
+          <!-- FILL IN: Replace with Nadia's actual email -->
+          <a href="mailto:votre@email.com" class="email-link">votre@email.com</a>
+        </div>
+      </div>
     </section>
 
     <footer>
-      © 2026 • fait avec GitHub Pages
+      © <span id="year"></span> Nadia Crisetig
     </footer>
 
   </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleContact(e) {
+      e.preventDefault();
+      const feedback = document.getElementById('form-feedback');
+      const email = 'votre@email.com'; // FILL IN: same email as above
+      const name = document.getElementById('name').value;
+      const msg = document.getElementById('message').value;
+      const subject = encodeURIComponent('Message depuis le portfolio – ' + name);
+      const body = encodeURIComponent(msg + '\n\nEnvoyé par : ' + name + ' (' + document.getElementById('email').value + ')');
+      window.location.href = 'mailto:' + email + '?subject=' + subject + '&body=' + body;
+      feedback.textContent = '✓ Ouverture de votre client mail…';
+    }
+  </script>
 </body>
 </html>
